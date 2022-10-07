@@ -14,21 +14,25 @@
 </head>
 <body>
 
-    <form class="w-25  ">
-        <div class="row ">
-            <label for="km" class="col">Distanza in km</label>
-            <input type="text" id="km" name="km" class="col"><br><br>
-        </div>
-        <div class="row">
-            <label for="age" class="col">Et&aacute; passeggero</label>
-            <input type="text" id="age" name="age" class="col"><br><br>
-        </div>
-        <input type="button" id="calcola" value="calcola prezzo">
-      </form>
+    <main class="w-100  position-relative">
 
-      <div>
-        <h1 id="prezzo"></h1>
-      </div>
+        <div class=" position-absolute biglietteria text-center">
+            <form class=" m-auto  ">
+                <div class="row justify-content-center ">
+                    <label for="km" class="col-12 mb-2 fs-4">Distanza in km</label>
+                    <input type="text" id="km" name="km" class="col-6 text-center fs-4"><br><br>
+                </div>
+                <div class="row my-3 justify-content-center">
+                    <label for="age" class="col-12 mb-2 fs-4">Et&aacute; passeggero</label>
+                    <input type="text" id="age" name="age" class="col-6 text-center fs-4"><br><br>
+                </div>
+                <input type="button" id="calcola" value="calcola prezzo" class="my-2 ">
+              </form>
+              <div>
+                <h1 id="prezzo" class="price col-6 text-center"> </h1>
+              </div>
+        </div>
+    </main>
 
     <script src="./js/script.js"></script>
 </body>

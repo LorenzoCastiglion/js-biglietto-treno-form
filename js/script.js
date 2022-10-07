@@ -4,10 +4,16 @@ const btn = document.getElementById('calcola');
 
 let ticket = 0;
 
+
+
 const calcolaBiglietto =  function() {
 
     let km = document.getElementById('km').value;
     let age = document.getElementById('age').value;
+
+    if(isNaN(km) || isNaN(age)){
+        alert('NuMeRi!1!1!!11!1')
+    }
 
     console.log(age)
     console.log(km)
@@ -25,7 +31,9 @@ const calcolaBiglietto =  function() {
 
     console.log(ticket)
 
-    document.getElementById("prezzo").innerHTML = ticket;
+    let finalPrice = parseFloat(ticket).toFixed(2)
+
+    document.getElementById("prezzo").innerHTML = finalPrice + ' &euro;';
 };
 
 btn.addEventListener('click', calcolaBiglietto);

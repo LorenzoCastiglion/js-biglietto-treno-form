@@ -5,7 +5,10 @@
 }
 
 body{
+    background-image: url('../img/midnight\ train.jpg');
     font-family: 'PT Mono', monospace; 
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -17,7 +20,8 @@ main{
 
     border-radius: 10px;
     width: 30%;
-    background-color: red;
+    background-image: url('../img/blkmarket-vintage-chroma-scrap-pack\ \(70\).jpg');
+    background-size: cover;
     padding: 50px 0;
     margin: 0 ;
     top: 50%;
@@ -27,6 +31,6 @@ main{
 
 .price{
     margin: 0 auto;
-    background-color: white;
-    color: green;
+    background-color: rgba(255, 255, 255, 0.701);
+    
 }
